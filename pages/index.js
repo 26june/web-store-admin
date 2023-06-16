@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 import { useSession, signIn, signOut } from "next-auth/react";
+import Nav from "./components/Nav";
 
 export default function Home() {
   const { data: session } = useSession();
@@ -24,8 +25,9 @@ export default function Home() {
 
   return (
     <div className="bg-blue-900 min-h-screen">
+      <Nav></Nav>
       <div>Logged in as {session.user.name}</div>
-      <div className="text-center w-full">
+      <div>
         <button
           className="bg-white p-2 px-4 rounded-lg"
           onClick={() => signOut()}
