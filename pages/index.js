@@ -23,7 +23,8 @@ export default function Home() {
   }
 
   return (
-    <div className="bg-red-900 w-screen h-screen flex items-center">
+    <div className="bg-blue-900 min-h-screen">
+      <div>Logged in as {session.user.name}</div>
       <div className="text-center w-full">
         <button
           className="bg-white p-2 px-4 rounded-lg"
