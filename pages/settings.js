@@ -1,4 +1,5 @@
 import Layout from "./components/Layout";
+import { signOut } from "next-auth/react";
 
 export default function Settings() {
   return (
