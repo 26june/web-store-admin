@@ -20,7 +20,7 @@ export default function Home() {
             alt="Profile Picture"
             className="h-6 w-6"
           ></img>
-          <span className="px-2">{session.user.name}</span>
+          <span className="px-2">{session?.user.name}</span>
         </div>
       </div>
     </Layout>
